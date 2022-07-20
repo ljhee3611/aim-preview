@@ -1,0 +1,590 @@
+@import url(../css/reset.css);
+@import url(../css/fonts.css);
+
+
+body{
+    background:black;
+    font-size:15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x:hidden;
+}
+
+.container{
+    width:100%;
+    max-width:1255px;
+    margin:0 auto;
+}
+
+.header{
+    background:#0c0c0c;
+    height:122px;
+    border-bottom:1px solid #2e2e2e;
+    position:relative;
+    font-family: 'ArtGalleria';
+}
+
+.header__logo{
+    width:132px;
+    height:132px;
+    position:absolute;
+    top:10px;
+    left:calc(50% - 66px);
+    z-index:2;
+}
+
+.nav{
+    color:#fff;
+    width:100%;
+    height:122px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+}
+
+.nav__menu{
+    font-size:1.25em;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:calc(50% - 120px);
+    padding-top:10px;
+    letter-spacing:0.5px;
+}
+
+.nav__external{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav__external:before{
+    content:'';
+    display:inline-block;
+    width:1px;
+    height:20px;
+    background:#fff;
+}
+
+.nav__link{
+    width:30px;
+    height:30px;
+}
+
+.nav__link--instagram{
+    background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path fill='%23ffffff' d='M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z'/></svg>");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.nav__link--twitter{
+    background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23ffffff' d='M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z'/></svg>");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.nav__link--wallet{
+    background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23ffffff' d='M448 32c17.7 0 32 14.33 32 32s-14.3 32-32 32H80c-8.84 0-16 7.2-16 16s7.16 16 16 16h368c35.3 0 64 28.7 64 64v224c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V96c0-35.35 28.65-64 64-64h384zm-32 304c17.7 0 32-14.3 32-32s-14.3-32-32-32-32 14.3-32 32 14.3 32 32 32z'/></svg>");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.main{
+    position:relative;
+}
+
+.mainSlider__background{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:1000px;
+    background-size:cover;
+    opacity:0.15;
+    transition:background 0.5s;
+}
+
+.mainSlider{
+    position:relative;
+    width:100%;
+    max-width:1034px;
+    margin:30px auto;
+}
+
+.mainSlider .swiper-cards{
+    text-align:center;
+}
+
+.mainSlider .swiper-slide{
+    opacity:0.3;
+}
+
+.mainSlider .swiper-slide.swiper-slide-active{
+    opacity:1;
+}
+
+.mainSlider img{
+    width:100%;
+}
+
+.mainSlider .swiper-button-next{
+    right:-50px;
+    color:#fff;
+}
+
+.mainSlider .swiper-button-prev{
+    left:-50px;
+    color:#fff;
+}
+
+.mainSlider .swiper-pagination{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:20px;
+    left:40px !important; 
+    bottom:50px !important;
+}
+
+.mainSlider .swiper-pagination-bullet{
+    width:12px;
+    height:12px;
+    background:#fff;
+    border:2px solid #fff;
+    opacity:1;
+}
+
+.mainSlider .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background:#000;
+}
+
+.AIM__section{
+    padding:20vh 0 0;
+    color:#fff;
+}
+
+.AIM__title{
+    text-align:center;
+    font-size:2.5vw;
+    font-weight:300;
+    font-family: 'ArtGalleria';
+    line-height:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.AIM__title:after{
+    content:'';
+    display:inline-block;
+    width:73px;
+    height:11px;
+    border-radius:50px;
+    background:#6f6f6f;
+    margin:60px 0;
+}
+
+.AIM__title > span{
+    font-size:1.5vw;
+    margin-top:15px;
+}
+
+.about-AIM__description{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+}
+
+.about-AIM__v{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:420px;
+}
+
+.about-AIM__BAYC__logo{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.about-AIM__nft{
+    background:#151515;
+    border:3px solid #262626;
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.about-AIM__nft__img{
+    width:100%;
+}
+
+.about-AIM__nft__name{
+    font-size:1.45em;
+    padding:30px;
+}
+
+.about-AIM__t{
+    word-break:keep-all;
+    padding-top:36px;
+    max-width:420px;
+    font-size:1.2em;
+    line-height:1.75;
+}
+
+.AIM__collection{
+    background:#151515;
+    border:3px solid #262626;
+    border-radius:20px;
+    width:100%;
+    max-width:900px;
+    margin-bottom:50px;
+}
+
+.AIM__collection .swiper-slide{
+    width:100%;
+    text-align:center;
+}
+
+.AIM__collection .swiper-slide img{
+    width:60%;
+}
+
+.AIM__collection-next{
+    color:#fff !important;
+    right:50px !important;
+}
+
+.AIM__collection-prev{
+    color:#fff !important;
+    left:50px !important;
+}
+
+.AIM__collection__h{
+    font-size:1.5em;
+    font-weight:600;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.AIM__collection__t{
+    font-size:1.2em;
+    text-align:center;
+    line-height:2;
+}
+
+.marquee .swiper-wrapper{
+    -webkit-transition-timing-function:linear!important;
+    transition-timing-function:linear!important; 
+    position: relative;
+}
+
+.marquee .swiper-slide{
+    width: auto !important;
+    padding:0 0.5vw;
+}
+
+.marquee .swiper-slide img{
+    width:15vw;
+}
+
+.marquee--top{
+    margin-bottom:0.5vw;
+}
+
+.AIM__btns{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding-top:70px;
+}
+
+.AIM__btn{
+    border:3px solid #262626;
+    border-radius:20px;
+    width:450px;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.75em;
+    text-shadow: 0px 0px 10px #006edc, 0px 0px 10px #006edc;
+    background:#0c0c0c;
+}
+
+.AIM__btn--opensea:before{
+    content:'';
+    display:inline-block;
+    width:60px;
+    height:54px;
+    background:url(../img/opensea-icon.png) no-repeat;
+    background-size:contain;
+    margin-right:15px;
+    filter: drop-shadow(0px 0px 7px #006edc);
+}
+
+.bayc__shop{
+    overflow:hidden;
+    padding-bottom:100px;
+    position:relative;
+}
+
+.bayc__shop .swiper-slide{
+    border:2px solid #333;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0px 0px 10px 3px #333333;
+}
+
+.bayc__shop .swiper-slide > div{
+    display:flex;
+    flex-direction:column;
+}
+
+.bayc__shop .swiper-slide img{
+    width:100%;
+}
+
+.bayc__shop__buy{
+    width:31px;
+    height:29px;
+    background:url(../img/shopping-icon.png);
+    background-size:cover;
+    margin:10px 0 4px;
+}
+
+.bayc__shop__name{
+    width:100%;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    font-size:1.75em;
+    font-weight:600;
+}
+
+.bayc__shop__price{
+    font-size:1.05em;
+    font-weight:300;
+    color:#ffbe0d;
+}
+
+.bayc__shop__pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    bottom:10px;
+}
+
+.bayc__shop__pagination > .swiper-pagination-bullet{
+    background:#fff;
+    border:2px solid #fff;
+    opacity:1;
+    width:12px;
+    height:12px;
+}
+
+.bayc__shop__pagination > .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background:#000;
+}
+
+.AIM__games__title{
+    font-size:1.5vw;
+    font-family: 'ArtGalleria';
+    font-weight:400;
+    margin-bottom:30px;
+    padding-left:15px;
+}
+
+.AIM__games__list{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:10px;
+}
+
+.AIM__games__item{
+    width:48%;
+    margin-bottom:60px;
+}
+
+.AIM__game__img{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.AIM__game__img img{
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 0 5px 5px #222;
+}
+
+.AIM__game__img.AIM__game__img--comingSoon img{
+    filter:blur(3px);
+}
+
+.AIM__game__img.AIM__game__img--comingSoon:before{
+    content:'COMING SOON';
+    font-family: 'ArtGalleria';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,0.5);
+    z-index:2;
+    font-size:2.5vw;
+}
+
+.AIM__game__status{
+    position:absolute;
+    top:-17px;
+    right:30px;
+    border:4px solid #000;
+    border-radius:100px;
+    background:#5acc23;
+    color:#000;
+    width:75px;
+    height:34px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-shadow:0 0 10px #000;
+    z-index:2;
+}
+
+.AIM__game__infos{
+    display:flex;
+    align-items:center;
+}
+
+.AIM__game__item__txt{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    padding:0 0 0 10px;
+}
+
+.AIM__game__item__btn{
+    flex:1;
+}
+
+.AIM__game__item__btn button{
+    width:100%;
+    height:60px;
+    border:3px solid #262626;
+    border-radius:15px;
+    background:#0c0c0c;
+    color:#fff;
+    text-shadow: 0px 0px 10px #006edc, 0px 0px 10px #006edc;
+    font-size:2em;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.AIM__game__item__btn--comingSoon button{
+    color:#717171;
+    text-shadow:none;
+}
+
+.AIM__game__item__title{
+    font-size:1.5em;
+    font-weight:600;
+    color:#ffffff;
+    margin-bottom:5px;
+}
+
+.AIM__game__item__description{
+    font-size:1.1em;
+    color:#828282;
+    font-weight:300;
+}
+
+.AIM__radio{
+    display:flex;
+    align-items:center;
+    gap:3vw;
+    padding-bottom:200px;
+}
+
+.AIM__radio__visual{
+    width:60%;
+}
+
+.AIM__radio__visual img{
+    width:100%;
+    border-radius:20px;
+}
+
+.AIM__radio__infos{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.AIM__radio__txt{
+    font-size:1.4em;
+    font-weight:300;
+}
+
+.AIM__radio__logo{
+    filter:drop-shadow(0px 0px 5px rgba(255,255,255,0.65));
+    width:100%;
+}
+
+.AIM__radioView__btn{
+    border:2px solid #262626;
+    border-radius:20px;
+    padding:0 60px;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.75em;
+    font-weight:600;
+    text-shadow: 0px 0px 10px #006edc, 0px 0px 10px #006edc;
+    background:#0c0c0c;
+    align-self:flex-start;
+}
+
+.AIM__radioView__btn:after{
+    content:'';
+    display:inline-block;
+    width:25px;
+    height:24px;
+    background:url(../img/rightArrow-icon.png) no-repeat;
+    background-size:contain;
+    margin-left:20px;
+    filter: drop-shadow(0px 0px 7px #006edc);
+}
+
+.footer{
+    padding:100px 0;
+    background:#0d0d0d;
+}
+
+.footer__info{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#858585;
+    gap:10px;
+}
+
+.footer__contactUs{
+    font-family: 'ArtGalleria';
+    font-size:3.4em;
+    font-weight:400;
+    margin-bottom:20px;
+    color:#a7a7a7;
+}
+
+.footer__copyrights{
+    margin-top:20px;
+}
