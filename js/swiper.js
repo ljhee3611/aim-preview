@@ -38,12 +38,22 @@ var swiper2 = new Swiper(".AIM__collection", {
 
 // Main BAYC Shop
 var swiper3 = new Swiper(".bayc__shop", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
         el: ".bayc__shop__pagination",
         clickable: true,
     },
+    breakpoints: {
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        },
+    }
 });
 
 // Main BAYC Marquee top
