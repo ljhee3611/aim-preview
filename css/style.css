@@ -806,6 +806,10 @@ body{
         width:40%;
     }
 
+    .mainSlider{
+        overflow:hidden !important;
+    }
+
     .mainSlider .swiper-pagination{
         display:none;
     }
