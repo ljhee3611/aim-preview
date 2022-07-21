@@ -805,6 +805,18 @@ body{
     .AIM__partners > a{
         width:40%;
     }
+
+    .mainSlider .swiper-pagination{
+        display:none;
+    }
+
+    .mainSlider-prev{
+        display:none !important;
+    }
+
+    .mainSlider-next{
+        display:none !important;
+    }
 }
 
 @media (max-width: 900px){
