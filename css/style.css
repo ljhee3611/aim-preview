@@ -18,7 +18,7 @@ body{
 
 .header{
     background:#0c0c0c;
-    height:122px;
+    height:76px;
     border-bottom:1px solid #2e2e2e;
     position:relative;
     font-family: 'ArtGalleria';
@@ -102,7 +102,7 @@ body{
 
 @media (max-width: 1200px){
     .header{
-        height:90px;
+        height:66px;
     }
 
     .header__logo{
@@ -190,7 +190,7 @@ body{
     position:relative;
     width:100%;
     max-width:1034px;
-    margin:30px auto;
+    margin:80px auto 30px;
 }
 
 .mainSlider.swiper-cards{
