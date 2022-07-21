@@ -12,3 +12,7 @@ a{
 a:hover{
     color:inherit;
 }
+
+body{
+    overflow-x:hidden;
+}

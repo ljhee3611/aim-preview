@@ -108,7 +108,6 @@ body{
     .header__logo{
         width:110px;
         height:110px;
-        left:5%;
     }
 
     .nav{
@@ -194,8 +193,9 @@ body{
     margin:30px auto;
 }
 
-.mainSlider .swiper-cards{
+.mainSlider.swiper-cards{
     text-align:center;
+    width:100%;
 }
 
 .mainSlider .swiper-slide{
@@ -250,6 +250,7 @@ body{
 .AIM__section{
     padding:20vh 0 0;
     color:#fff;
+    overflow-x:hidden;
 }
 
 .AIM__title{
@@ -495,8 +496,7 @@ body{
 }
 
 .AIM__games__item{
-    width:48%;
-    margin-bottom:60px;
+    width:100%;
 }
 
 .AIM__game__img{
@@ -599,7 +599,6 @@ body{
     display:flex;
     align-items:center;
     gap:3vw;
-    padding-bottom:200px;
 }
 
 .AIM__radio__visual{
@@ -652,6 +651,21 @@ body{
     background-size:contain;
     margin-left:20px;
     filter: drop-shadow(0px 0px 7px #006edc);
+}
+
+.AIM__partners{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:200px;
+}
+
+.AIM__partners > a{
+    width:20%;
+}
+
+.AIM__partners > a img{
+    width:100%;
 }
 
 .footer{
@@ -780,6 +794,17 @@ body{
         font-size:1.3em;
         align-self:center;
     }
+
+    .AIM__partners{
+        flex-direction: column;
+        padding-bottom:100px;
+        align-items:center;
+        gap:30px;
+    }
+    
+    .AIM__partners > a{
+        width:40%;
+    }
 }
 
 @media (max-width: 900px){
@@ -796,4 +821,16 @@ body{
         height:50px;
         letter-spacing: -1px;
     }
+}
+
+
+
+
+
+.AIM__TEMP{
+    text-align:center;
+}
+
+.AIM__TEMP img{
+    width:100%;
 }
