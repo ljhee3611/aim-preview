@@ -318,7 +318,6 @@ body{
 
 .about-AIM__t{
     word-break:keep-all;
-    padding-top:36px;
     max-width:420px;
     font-size:1.2em;
     line-height:1.75;
@@ -813,30 +812,30 @@ body{
     bottom:-10px;
 }
 
-.AIM__history__item--lichardLee{
-    padding:80px 0 50px 4vw;
+.AIM__history__item--RichardLee{
+    padding:50px 0 50px 4vw;
 }
 
-.AIM__history__item--lichardLee > div{
+.AIM__history__item--RichardLee > div{
     display:flex;
     align-items:flex-end;
 }
 
-.AIM__history__item--lichardLee img{
+.AIM__history__item--RichardLee img{
     width:150px;
     height:150px;
     margin-right:20px;
     border-radius:10px;
 }
 
-.AIM__history__item--lichardLee span{
+.AIM__history__item--RichardLee span{
     font-family: 'ArtGalleria';
     font-size:2.4em;
     position:relative;
     padding-top:10px;
 }
 
-.AIM__history__item--lichardLee span:before{
+.AIM__history__item--RichardLee span:before{
     content:'';
     display:inline-block;
     width:30px;
@@ -1037,7 +1036,7 @@ body{
         display:none;
     }
 
-    .AIM__history__item--lichardLee{
+    .AIM__history__item--RichardLee{
         background:#000;
         justify-content:center;
         padding-top:20px !important;
