@@ -37,6 +37,7 @@ var swiper2 = new Swiper(".AIM__collection", {
 });
 
 // Main BAYC Shop
+/*
 var swiper3 = new Swiper(".bayc__shop", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -55,6 +56,7 @@ var swiper3 = new Swiper(".bayc__shop", {
         },
     }
 });
+*/
 
 // Main BAYC Marquee top
 let SwiperTop = new Swiper('.marquee--top', {

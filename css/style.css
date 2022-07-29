@@ -847,6 +847,55 @@ body{
     left:0;
 }
 
+.AIM__advisor{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:3vw;
+}
+
+.AIM__advisor > div{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.AIM__advisor ul{
+    list-style: none;
+    width:80%;
+}
+
+.AIM__advisor ul li{
+    margin-bottom:5px;
+    font-size:1.1em;
+    word-break: keep-all;
+    padding-left:15%;
+}
+
+.AIM__advisor > div img{
+    width:100%;
+    max-width:273px;
+}
+
+.AIM__advisor__name{
+    margin:20px 0;
+    background:#161616;
+    border:2px solid #373737;
+    border-radius:20px;
+    width:100%;
+    max-width:260px;
+    padding:15px 0;
+    font-size:1.2em;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.AIM__advisor__name strong {
+    font-size:0.95em;
+}
+
 .footer{
     padding:100px 0;
     background:#0d0d0d;
