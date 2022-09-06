@@ -351,6 +351,35 @@ body{
     left:50px !important;
 }
 
+.AIM__collection2{
+    background:#151515;
+    border:3px solid #262626;
+    border-radius:20px;
+    width:100%;
+    max-width:900px;
+    margin-bottom:50px;
+    margin-top:50px;
+}
+
+.AIM__collection2 .swiper-slide{
+    width:100%;
+    text-align:center;
+}
+
+.AIM__collection2 .swiper-slide img{
+    width:60%;
+}
+
+.AIM__collection-next2{
+    color:#fff !important;
+    right:50px !important;
+}
+
+.AIM__collection-prev2{
+    color:#fff !important;
+    left:50px !important;
+}
+
 .AIM__collection__h{
     font-size:1.5em;
     font-weight:600;

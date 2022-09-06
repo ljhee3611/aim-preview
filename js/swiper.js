@@ -36,6 +36,15 @@ var swiper2 = new Swiper(".AIM__collection", {
     },
 });
 
+// Main Art Slider2
+var swiper3 = new Swiper(".AIM__collection2", {
+    navigation: {
+        nextEl: ".AIM__collection-next2",
+        prevEl: ".AIM__collection-prev2",
+    },
+    autoHeight: true
+});
+
 // Main BAYC Shop
 /*
 var swiper3 = new Swiper(".bayc__shop", {
